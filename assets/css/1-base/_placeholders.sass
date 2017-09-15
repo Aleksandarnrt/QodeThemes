@@ -1,0 +1,40 @@
+%containers
+    position: relative
+    max-width: 46.501%
+    margin: -1px 0 0 -1px
+    top: 0
+    left: 0
+    background: $bg-color
+    padding: 17px;
+    transition: all .4s ease-in-out
+    
+%hover-states
+    &:nth-child(odd)
+        border: 
+            width: 1px 1px 1px 1px
+            style: solid 
+            color: $border-color
+        &:hover
+            box-shadow: 5px 5px 0px $small-nav-color
+            border: 
+                width: 1px 0 0 1px
+                style: solid 
+                color: $border-color
+            z-index: 1
+            transform: translate(-4px,-4px)
+                        
+    &:nth-child(even)
+        z-index: 1
+        border: 
+            width: 1px 1px 1px 1px
+            style: solid 
+            color: $border-color
+        &:hover
+            box-shadow: 5px 5px 0px $small-nav-color
+            border: 
+                width: 1px 0 0 1px
+                style: solid 
+                color: $border-color
+            z-index: 2
+            transform: translate(-4px,-3px)
+            
